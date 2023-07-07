@@ -3,9 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
 #cuerpo {
     text-align: center;
-    
+
 }
 
 a {
@@ -32,6 +33,7 @@ div {
     background-color: #69b08b;
     margin-left: 200px;
 }
+
 #portada {
     text-decoration: none;
     color: darkgreen;
@@ -53,6 +55,7 @@ section article {
     width: 40%;
     height: 30%;
 }
+
 .casaCards {
     background-color: rgb(123, 230, 176);
     color: black;
@@ -60,6 +63,7 @@ section article {
     padding: 30px;
     margin: 5px 15px 25px 5px
 }
+
 .cards {
     margin-top: 50px;
     display: flex;
@@ -79,7 +83,8 @@ section article {
     object-fit: contain;
 
 }
-.casaCards ul{
+
+.casaCards ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -89,14 +94,14 @@ section article {
 }
 
 
-body{
+body {
     display: grid;
     grid-template-columns: 1fr 1fr 10%;
     grid-row: 5% 1fr 10%;
-    grid-template-areas: 
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "footer footer footer";
     min-height: 100vh;
     column-gap: 20px;
     row-gap: 25px;
@@ -134,14 +139,17 @@ nav ul {
     align-items: flex-end;
     height: 50px;
 }
+
 main {
     grid-area: main;
 }
-aside{
+
+aside {
     grid-area: aside;
     display: flex;
     align-items: center;
 }
+
 footer {
     grid-area: footer;
     font-size: small;
@@ -155,52 +163,57 @@ footer div {
     list-style-type: none;
     padding: 20px;
     display: flex;
-       
+
 }
 
-footer ul li{
+footer ul li {
     list-style-type: none;
     display: flex;
 }
-@media (max-width: 1024px){
-    body{
+
+@media (max-width: 1024px) {
+    body {
         grid-template-columns: auto;
         grid-row: 150px 1fr 2fr 10%;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "aside aside"
-        "footer footer";
+        grid-template-areas:
+            "header header"
+            "main main"
+            "aside aside"
+            "footer footer";
         flex-direction: column;
-        
+
     }
+
     header {
         flex-direction: column;
-        
+
     }
-    
+
     nav {
         width: auto;
-       
-    
     }
 
     main {
         padding-top: 240px;
         flex-direction: column;
     }
-    .cards{
+
+    .cards {
         flex-direction: column;
     }
+
     footer {
         flex-wrap: wrap;
 
+    }
+
 }
 
-@media (max-width: 425px){
-    body{
+@media (max-width: 425px) {
+    body {
         display: flex;
     }
+
     aside {
         display: flex;
 
