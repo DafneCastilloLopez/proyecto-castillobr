@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Castillo BR | Alquilar</title>
 </head>
@@ -15,16 +17,48 @@
         <a href="../index.html">
             <img src="../img/banner.png" alt="imagen de la inmobiliaria">
         </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="comprar.html">Comprar</a></li>
-                <li><a href="vender.html">Vender</a></li>
-                <li><a href="#">Alquilar</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-            </ul>
-
-
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/comprar.html">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/vender.html">Vender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/alquilar.html">Alquilar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sesion
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Iniciar Sesion</a></li>
+                                <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Propiedades</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -32,17 +66,12 @@
 
         <section id="portada">
             <h1>Propiedades en Alquiler</h1>
-
-
-            <div class="cards">
-
-                <h2>CASAS</h2>
-                <div class="row">
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-casa1.jpeg" alt="casa1alquiler">
-                        </a>
-                        <h3>Casa en el Pueblo de Cayasta</h3>
+            <h2>CASAS</h2>
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/alquiler-casa1.jpeg" class="card-img-top" alt="casa1alquiler">
+                    <div>
+                        <p class="card-body">Casa en el Pueblo de Cayasta</p>
                         <ul>
                             <li>Habitacion</li>
                             <li>Cocina</li>
@@ -54,14 +83,16 @@
                             <li>Estudio </li>
                             <li>Lavadero</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/dto2.webp" alt="casa2alquiler">
-                        </a>
-                        <h3>Casa quinta prefabricada</h3>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+
+                    <img src="../img/dto2.webp" class="card-img-top" alt="casa2alquiler">
+                    <div>
+                        <p class="card-body">Casa quinta prefabricada</p>
                         <ul>
                             <li>2 Habitaciones</li>
                             <li>Cocina</li>
@@ -71,14 +102,15 @@
                             <li>Cochera por fuera de la casa</li>
                             <li>Lavadero</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-casa3.jpeg" alt="casa3alquiler">
-                        </a>
-                        <h3>Casa quinta en Villa California</h3>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/alquiler-casa3.jpeg" class="card-img-top" alt="casa3alquiler">
+                    <div>
+                        <p class="card-body">Casa quinta en Villa California</p>
                         <ul>
                             <li>3 Habitaciones</li>
                             <li>Piscina</li>
@@ -91,14 +123,17 @@
                             <li>Galeria</li>
                             <li>Lavadero</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-casa4.jpeg" alt="casa4alquiler">
-                        </a>
-                        <h3>Casa en Santo Tome</h3>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="../img/alquiler-casa4.jpeg" class="card-img-top" alt="casa4alquiler">
+                    <div>
+                        <p class="card-body">Casa en Santo Tome</p>
                         <ul>
                             <li>Habitacion en planta alta</li>
                             <li>Cocina</li>
@@ -109,19 +144,16 @@
                             <li>Cochera</li>
                             <li>Galeria</li>
                         </ul>
-                        <a href="whatsapp">WhatsApp</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
-
-
                 </div>
-                <h2>DEPARTAMENTOS</h2>
-                <div class="row">
-
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-dpto1.jpeg" alt="dpto1alquiler">
-                        </a>
-                        <h3>Departamentos a estrenar en el puerto</h3>
+            </div>
+            <h2>DEPARTAMENTOS</h2>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/alquiler-dpto1.jpeg" class="card-img-top" alt="dpto1alquiler">
+                    <div>
+                        <p class="card-body">Departamentos a estrenar en el puerto</p>
                         <ul>
                             <li>1/2 Habitaciones</li>
                             <li>Cocina/comedor</li>
@@ -129,14 +161,14 @@
                             <li>Balcon amplio</li>
                             <li>Piscina a compartir</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
+                </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/dto2.webp" alt="dpto2alquiler" style="width: 511.25px;">
-                        </a>
-                        <h3>Departamento en zona sur</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/dto2.webp" class="card-img-top" alt="dpto2alquiler">
+                    <div>
+                        <p class="card-body">Departamento en zona sur</p>
                         <ul>
                             <li>Habitacion</li>
                             <li>Cocina/comedor</li>
@@ -144,40 +176,40 @@
                             <li>Baño</li>
                             <li>Balcon</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
+                </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-dpto3.jpeg" alt="dpto3valquiler">
-                        </a>
-                        <h3>Departamento en pleno Centro</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/alquiler-dpto3.jpeg" class="card-img-top" alt="dpto3valquiler">
+                    <div>
+                        <p class="card-body">Departamento en pleno Centro</p>
                         <ul>
                             <li>Habitacion en entrepiso</li>
                             <li>Cocina/comedor/living</li>
                             <li>Baño</li>
                             <li>Balcon con lavadero</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
+                </div>
 
-                    <div class="casaCards">
-                        <a>
-                            <img class="fotocards" src="../img/alquiler-dto4.jpeg" alt="dpto4alquiler">
-                        </a>
-                        <h3>Departamento en Barrio Ciudadela</h3>
+                <div class="card">
+                    <img src="../img/alquiler-dto4.jpeg" class="card-img-top" alt="dpto4alquiler">
+                    <div>
+                        <p class="card-body">Departamento en Barrio Ciudadela</p>
                         <ul>
                             <li>Habitacion</li>
                             <li>Cocina/comedor</li>
                             <li>Baño</li>
                             <li>Balcon</li>
                         </ul>
-                        <a href="whatsapp">Whats App</a>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-
 
     </main>
 
@@ -222,6 +254,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
 </body>
 
