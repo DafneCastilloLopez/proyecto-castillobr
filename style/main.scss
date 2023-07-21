@@ -1,10 +1,13 @@
+$colorPrincipal: #69b08b;
+$colorSecundario: #ecd98a;
+
 * {
     margin: 0.5%;
     padding: 1%;
     box-sizing: border-box;
 }
 
-/* estilos generales */
+
 body {
     font-family: Arial, Helvetica, sans-serif
 }
@@ -15,7 +18,7 @@ header {
         text-decoration: aqua;
 
         a {
-            color: #69b08b;
+            color: $colorPrincipal;
             text-decoration: none;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -25,6 +28,9 @@ header {
 
 main {
     section {
+        .portada{
+            margin-top: 20%;
+        }
         h1 {
             color: #69b08b;
             display: flex;
@@ -38,7 +44,7 @@ main {
         }
 
         .cards {
-            color: cornsilk;
+            color: #ecd98a;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -57,9 +63,9 @@ h2 {
     color: black;
 }
 
-/*footer*/
+
 footer {
-    background-color: #69b08b;
+    background-color: #b4c1f8;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
