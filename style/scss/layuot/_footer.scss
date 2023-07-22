@@ -1,0 +1,20 @@
+footer {
+    background-color: #b4c1f8;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    div {
+        display: flex;       
+
+        ul {
+            li {
+                a {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+
+}

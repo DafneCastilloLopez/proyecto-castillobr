@@ -1,7 +1,8 @@
 {
   "scripts": {
-"watch:scss" : " sass --watch ./style/main.scss ./css/style.css"
-  } 
+    "watch:scss": " sass --watch ./style/main.scss ./css/style.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
 }
- 
-
